@@ -46,12 +46,12 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Nueva actividad</h1>
+      <h1>Nueva venta</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item">Actividad</li>
-          <li class="breadcrumb-item active">Nueva actividad</li>
+          <li class="breadcrumb-item">Ventas</li>
+          <li class="breadcrumb-item active">Nueva venta</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -63,69 +63,37 @@
           
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Detalle de actividad</h5>
+              <h5 class="card-title">Detalle de venta</h5>
 
               <!-- No Labels Form -->
               <form class="row g-3">
-                <div class="col-md-12">
-                  <label for="fecha"></label>
-                  <input type="text" class="form-control" placeholder="N° de serial">
-                </div>
-                <div class="col-6">
-                  <label for="fecha">Fecha de emisión:</label>
-                  <input type="date" class="form-control" placeholder="Fecha">
-                </div>
-                <div class="col-6">
-                  <label for="fecha">Fecha de culminación:</label>
-                  <input type="date" class="form-control" placeholder="Fecha">
-                </div>
                 <div class="col-md-6">
                   <label for="select"></label>
                   <select id="inputState" class="form-select">
-                    <option selected>Áreas</option>
-                    <option>opción 1</option>
-                    <option>opción 2</option>
+                    <option selected>Nombre del producto</option>
+                    <option>producto 1</option>
+                    <option>producto 2</option>
                   </select>
                 </div>
                 <div class="col-md-6">
+                  <label for="cliente"></label>
+                  <input type="text" class="form-control" placeholder="Cliente">
+                </div>
+               <div class="col-md-6">
                   <label for="select"></label>
                   <select id="inputState" class="form-select">
-                    <option selected>Procendencia</option>
-                    <option value="">Despacho </option>
-                    <option value="">Vicepresidencia</option>
-                    <option value="">Secretaria Ejecutiva</option>
-                    <option value="">Consultoría Jurídica</option>
-                    <option value="">Oficina de Administración y Finanzas</option>
-                    <option value="">Oficina de Gestión Comunicacional</option>
-                    <option value="">Oficina de Gestión Humana</option>
-                    <option value="">Oficina de Planificación y Presupuesto</option>
-                    <option value="">Oficina de Tecnología de la Información y la Comunicación</option>
-                    <option value="">Oficina de Atención Ciudadana y Articulación Social</option>
-                    <option value="">Oficina de Gestión de Calidad</option>
-                    <option value="">Oficina de Seguridad Integral</option>
-                    <option value="">Gerencia General de Comercialización y Negocios</option>
-                    <option value="">Gerencia General de Hidrocarbur</option>
+                    <option selected>Sucursal</option>
+                    <option>sucursal 1</option>
+                    <option>sucursal 2</option>
                   </select>
                 </div>
                 <div class="col-md-6">
-                  <label for="fecha"></label>
-                  <input type="text" class="form-control" placeholder="Asunto">
+                  <label for="cantidad"></label>
+                  <input type="number" class="form-control" placeholder="Cantidad">
                 </div>
                 <div class="col-md-6">
-                  <label for="select"></label>
-                  <select id="inputState" class="form-select">
-                    <option selected>Responsable</option>
-                    <option>Admirante Cedeño</option>
-                    <option>Capitán Sucre</option>
-                    <option>Capitán Pérez</option>
-                  </select>
-                </div>
-                <div class="col-12">
-                  <textarea class="form-control" id="accion" placeholder="Acción" rows="3"></textarea>
-                </div>
-                <div class="col-12">
-                  <label for="formFile" class="form-label">Archivo adjunto</label>
-                  <input class="form-control" type="file" id="formFile">
+                  <label for="precio"></label>
+                  <input type="number" class="form-control" placeholder="Precio">
                 </div>
                 <div class="text-center">
                   <button type="submit" class="btn btn-primary">Guardar</button>
@@ -176,6 +144,8 @@
     $(document).ready(function(){
         $("#menu-container").load("menu.html #sidebar");
         $("#header-container").load("header.html #header");
+        $.getScript("assets/js/main.js");
+
     });
   </script>
 </body>

@@ -80,7 +80,7 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Actividades totales <span>| Mes actual</span></h5>
+                  <h5 class="card-title">Ventas totales <span>| Mes actual</span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
@@ -115,7 +115,7 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Actividades realizadas <span>| Mes actual</span></h5>
+                  <h5 class="card-title">Venta sucursal 1 <span>| Mes actual</span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
@@ -151,7 +151,7 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Actividades pendientes <span>| Mes actual</span></h5>
+                  <h5 class="card-title">Venta sucursal 2 <span>| Mes actual</span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
@@ -187,53 +187,53 @@
               </div>
 
               <div class="card-body">
-                <h5 class="card-title">Estado de actividades <span>| Hoy</span></h5>
+                <h5 class="card-title">Ventas de productos <span>| Hoy</span></h5>
 
                 <table class="table table-borderless datatable">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
-                      <th scope="col">Area</th>
-                      <th scope="col">Actividad</th>
+                      <th scope="col">Producto</th>
+                      <th scope="col">Cliente</th>
                       <th scope="col">Precio</th>
-                      <th scope="col">Estado</th>
+                      <th scope="col">Sucursal</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <th scope="row"><a href="#">#1</a></th>
-                      <td>Despacho</td>
-                      <td><a href="#" class="text-primary">Servicio de vigilancia</a></td>
-                      <td>100 %</td>
-                      <td><span class="badge bg-success">Finalizada</span></td>
+                      <td>Pantalón</td>
+                      <td><a href="#" class="text-primary">Pedro & Juan C.A</a></td>
+                      <td>15 $</td>
+                      <td>Sucursal 1</td>
                     </tr>
                     <tr>
                       <th scope="row"><a href="#">#2</a></th>
-                      <td>Vicepresidencia</td>
-                      <td><a href="#" class="text-primary">Servicio de reparación bomba</a></td>
-                      <td>50 %</td>
-                      <td><span class="badge bg-warning">En proceso</span></td>
+                      <td>Camisa</td>
+                      <td><a href="#" class="text-primary">Juan S.A</a></td>
+                      <td>10 $</td>
+                      <td>Sucursal 1</td>
                     </tr>
                     <tr>
                       <th scope="row"><a href="#">#3</a></th>
-                      <td>Gerencia región insular</td>
-                      <td><a href="#" class="text-primary">Servicio para alquiler de equipos</a></td>
-                      <td>100 %</td>
-                      <td><span class="badge bg-success">Finalizada</span></td>
+                      <td>Sweater</td>
+                      <td><a href="#" class="text-primary">Juan S.A</a></td>
+                      <td>20 $</td>
+                      <td>Sucursal 1</td>
                     </tr>
                     <tr>
                       <th scope="row"><a href="#">#4</a></th>
-                      <td>Gerencia región oriental</td>
-                      <td><a href="#" class="text-primar">Servicio unidad de transporte de logística</a></td>
-                      <td>0 %</td>
-                      <td><span class="badge bg-danger">Pendiente</span></td>
+                      <td>Zapatos</td>
+                      <td><a href="#" class="text-primary">Pedro C.A</a></td>
+                      <td>10 $</td>
+                      <td>Sucursal 2</td>
                     </tr>
                     <tr>
                       <th scope="row"><a href="#">#5</a></th>
-                      <td>Oficina de gestión humana</td>
-                      <td><a href="#" class="text-primary">Servicios logística</a></td>
-                      <td>100 %</td>
-                      <td><span class="badge bg-success">Finalizada</span></td>
+                      <td>Cartera</td>
+                      <td><a href="#" class="text-primary">Pedro C.A</a></td>
+                      <td>8 $</td>
+                      <td>Sucursal 2</td>
                     </tr>
                   </tbody>
                 </table>
@@ -243,72 +243,51 @@
             </div>
           </div><!-- End Recent Sales -->
           
-            <div class="col-lg-12">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Actividades mensuales</h5>
-    
-                  <!-- Column Chart -->
-                  <div id="columnChart"></div>
-    
-                  <script>
-                    document.addEventListener("DOMContentLoaded", () => {
-                      new ApexCharts(document.querySelector("#columnChart"), {
-                        series: [{
-                          name: 'Totales',
-                          data: [80, 85, 115, 60, 61, 58, 63, 55, 66]
-                        }, {
-                          name: 'Realizadas',
-                          data: [76, 85, 101, 59, 50, 48, 62, 50, 64]
-                        }, {
-                          name: 'Pendientes',
-                          data: [4, 0,    14, 1, 9,   10, 1, 5, 2]
-                        }],
-                        chart: {
-                          type: 'bar',
-                          height: 350
-                        },
-                        plotOptions: {
-                          bar: {
-                            horizontal: false,
-                            columnWidth: '55%',
-                            endingShape: 'rounded'
-                          },
-                        },
-                        dataLabels: {
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Finanzas</h5>
+  
+                <!-- Line Chart -->
+                <div id="lineChart"></div>
+  
+                <script>
+                  document.addEventListener("DOMContentLoaded", () => {
+                    new ApexCharts(document.querySelector("#lineChart"), {
+                      series: [{
+                        name: "Productos",
+                        data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
+                      }],
+                      chart: {
+                        height: 350,
+                        type: 'line',
+                        zoom: {
                           enabled: false
-                        },
-                        stroke: {
-                          show: true,
-                          width: 2,
-                          colors: ['transparent']
-                        },
-                        xaxis: {
-                          categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
-                        },
-                        yaxis: {
-                          title: {
-                            text: 'Actividades'
-                          }
-                        },
-                        fill: {
-                          opacity: 1
-                        },
-                        tooltip: {
-                          y: {
-                            formatter: function(val) {
-                              return val + " Actividades"
-                            }
-                          }
                         }
-                      }).render();
-                    });
-                  </script>
-                  <!-- End Column Chart -->
-    
-                </div>
+                      },
+                      dataLabels: {
+                        enabled: false
+                      },
+                      stroke: {
+                        curve: 'straight'
+                      },
+                      grid: {
+                        row: {
+                          colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+                          opacity: 0.5
+                        },
+                      },
+                      xaxis: {
+                        categories: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep'],
+                      }
+                    }).render();
+                  });
+                </script>
+                <!-- End Line Chart -->
+  
               </div>
             </div>
+          </div>
 
  
             <!-- Top Selling -->
@@ -560,11 +539,13 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <!-- <script src="assets/js/main.js"></script> -->
   <script>
     $(document).ready(function(){
         $("#menu-container").load("menu.html #sidebar");
         $("#header-container").load("header.html #header");
+        $.getScript("assets/js/main.js");
+
     });
   </script>
 
